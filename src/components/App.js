@@ -2,6 +2,8 @@
 import { Component } from 'react';
 import './App.css';
 import News from './News/News';
+import Footer from './Footer/Footer';
+
 
 
 class App extends Component {
@@ -13,8 +15,8 @@ class App extends Component {
         query: 'sources=bbc-news'
       },
       news2: {
-        type: 'everything',
-        query: 'domains=wsj.com'
+        type: 'top-headlines',
+        query: 'sources=techcrunch'
     }
 
   };
@@ -24,10 +26,12 @@ class App extends Component {
     <div className="App">
       <header className="App-header">
      <h1 className='App-title'>News Feed</h1>
+     <p className='header-tag-line'>Know the world you live in.</p>
       </header>
 
       <News news={this.state.news1} />
       {/* <News news={this.state.news2} /> */}
+      <Footer year={new Date().getFullYear()} />
     </div>
   );
   }

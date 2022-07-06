@@ -11,7 +11,7 @@ const NewsSingle = ({item}) => (
                 <p>{item.title}</p>
             </div>
             <div className='card-action'>
-                <a href={item.url} target='_blank'>Full Article</a>
+                <a href={item.url} target='_blank' rel="noreferrer">Full article</a>
             </div>
         </div>
     </div>
