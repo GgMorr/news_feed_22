@@ -9,7 +9,7 @@ body {
 
 .App-header {
   background-color: #282c34;
-  min-height: 35vh;
+  min-height: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -17,12 +17,20 @@ body {
   font-size: calc(15px + 2vmin);
   font-family: 'Abril Fatface', cursive;
   color: white;
- 
+  border-style: dotted;
+}
+
+.App-title {
+  display: block;
+  margin-bottom: 0;
+  margin: 5px;
 }
 
 .header-tag-line {
   font-size: 15px;
   font-family: 'Roboto Slab', serif; 
+  display: block;
+ margin: 0px;
 }
 
 
@@ -30,5 +38,10 @@ body {
   color: #61dafb;
 }
 
-
+/* .card {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 100px
+} */
 

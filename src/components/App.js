@@ -26,7 +26,7 @@ class App extends Component {
     <div className="App">
       <header className="App-header">
      <h1 className='App-title'>News Feed</h1>
-     <p className='header-tag-line'>Know the world you live in.</p>
+     <p className='header-tag-line'>Know the world you live in</p>
       </header>
 
       <News news={this.state.news1} />
