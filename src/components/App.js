@@ -1,6 +1,7 @@
 
 import { Component } from 'react';
 import './App.css';
+import Header from './Header/Header';
 import News from './News/News';
 import SideNews from './News/SideNews'
 import Footer from './Footer/Footer';
@@ -58,34 +59,29 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container-fluid">
-        <div className="navbar-fixed">
-          <nav>
-            {/* <div className='nav-wrapper indigo lighten-1'> */}
-            <div className='App-header'>
-              <a href='/' className='bran-logo center App-title'>News Feed</a>
-              <p className='header-tag-line'>Know the world you live in</p>
-            </div>
-          </nav>
+
+      <div className="container-grid">
+        <div className="header">
+          <Header />
         </div>
 
-        <div className='row'>
-          <div className='col s9'>
-
+        <div className='content'>
+          <div>
             <News news={this.state.news1} />
             {/* <News news={this.state.news2} /> */}
           </div>
-
-          <div className='col s3'>
-            <SideNews news={this.state.news3} />
-          </div>
-
-
         </div>
-        <div>
+
+        <div className='sidebar' >
+          <SideNews news={this.state.news3} />
+        </div>
+
+        <div className='footer'>
           <Footer year={new Date().getFullYear()} />
         </div>
+
       </div>
+
     );
   }
 }

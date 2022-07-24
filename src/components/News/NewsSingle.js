@@ -2,6 +2,7 @@ import React from 'react';
 
 const NewsSingle = ({item}) => (
     <div className='col s4'>
+  
         <div className='card'>
             <div className='card-image'>
                 <img src={item.urlToImage} alt={item.title}/>
@@ -14,6 +15,7 @@ const NewsSingle = ({item}) => (
                 <a href={item.url} target='_blank' rel="noreferrer">Read article</a>
             </div>
         </div>
+       
     </div>
 
 );

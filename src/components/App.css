@@ -1,11 +1,36 @@
 body {
-  background-color: white;
+  background-color: rgb(250, 243, 243);
 }
 
 .App {
   text-align: center;
 }
 
+/* **************************** GRID ********************** */
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 15px;
+  grid-template-areas: 
+  "header header header header"
+  "content content content sidebar"
+  "content content content sidebar"
+  "footer footer footer footer";
+}
+
+
+.sidebar {
+grid-area: sidebar;
+}
+
+.content {
+grid-area: content;
+}
+
+
+
+/* **************************** HEADER COMPONENT ********************** */
 
 .App-header {
   background-color: #282c34;
@@ -18,19 +43,25 @@ body {
   font-family: 'Abril Fatface', cursive;
   color: white;
   border-style: solid;
+  border-color: black;
+  border-width: 8px;
 }
 
-.App-title {
+.header {
+  grid-area: header;
+  }
+
+
+  /* .App-title {
   display: block;
   margin-bottom: 0;
   margin: 5px;
-}
+} */
 
 .header-tag-line {
   font-size: 15px;
   font-family: 'Roboto Slab', serif; 
   display: block;
- margin: 0px;
 }
 
 
@@ -45,3 +76,8 @@ body {
   flex: 1 1 100px
 } */
 
+/* FOOTER COMPONENT */
+.footer {
+  grid-area: footer;
+  text-align: center;
+  }

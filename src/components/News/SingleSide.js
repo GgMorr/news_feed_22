@@ -2,7 +2,7 @@ import React from 'react';
 
 const SingleSide = ({item}) => (
 
-    <div>
+    <div className='col s4 sidebar'>
         <div className='divider'></div>
         <a href={item.url} target='_blank'>
             <div className='section'>
