@@ -51,18 +51,21 @@ grid-area: content;
   grid-area: header;
   }
 
+.header-tag-line {
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif; 
+    display: block;
+  }
+  
+/* **************************** HEADER TITLE ********************** */
 
-  /* .App-title {
+  .App-title {
   display: block;
   margin-bottom: 0;
   margin: 5px;
-} */
-
-.header-tag-line {
-  font-size: 15px;
-  font-family: 'Roboto Slab', serif; 
-  display: block;
+  padding-top: 20px;
 }
+
 
 
 .App-link {
