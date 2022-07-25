@@ -4,7 +4,7 @@ const SingleSide = ({item}) => (
 
     <div className='col s4 sidebar'>
         <div className='divider'></div>
-        <a href={item.url} target='_blank'>
+        <a href={item.url} target='_blank' rel="noreferrer">
             <div className='section'>
                 <h5>{item.source.name}</h5>
                 <p>{item.title}</p>
