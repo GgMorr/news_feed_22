@@ -2,6 +2,12 @@ import React, { Component } from 'react';
 import NewsSingle from './NewsSingle';
 import Error from './Error';
 
+const API = process.env.REACT_APP_NEWS_APIKEY;
+// import * as dotenv from ".env";
+
+// require("dotenv").config();
+// console.log(process.env.REACT_APP_NEWS_APIKEY);
+
 class News extends Component {
     constructor(props) {
         super(props);
@@ -12,7 +18,8 @@ class News extends Component {
     }
 
     componentDidMount() {
-        const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=916d3a727ad84e669e39153bf315ff77`;
+        // const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=916d3a727ad84e669e39153bf315ff77`;
+        const url = `https://newsapi.org/v2/${this.props.news.type}?${this.props.news.query}&apiKey=${API}`;
 
         fetch(url)
             .then((response) => {
