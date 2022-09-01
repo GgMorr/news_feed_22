@@ -41,7 +41,7 @@ grid-area: content;
   justify-content: center;
   font-size: calc(35px + 2vmin);
   font-family: 'Abril Fatface', cursive;
-  color: white;
+  color: rgb(246, 241, 241);
   border-style: solid;
   border-color: black;
   border-width: 8px;
